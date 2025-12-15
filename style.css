@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #ffd6e8, #ff9ecb);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* LOGIN */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login-box {
+  background: rgba(255,255,255,0.9);
+  padding: 35px;
+  width: 320px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.login-box h1 {
+  font-size: 1.5rem;
+  color: #c2185b;
+}
+
+.login-box p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  border: 1px solid #f3a6c8;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  background: #ff5fa2;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #ff3f8f;
+}
+
+/* MAIN PAGE */
+.main-page {
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h2 {
+  color: #8b1450;
+  margin-bottom: 25px;
+}
+
+.product-card {
+  background: rgba(255,255,255,0.9);
+  padding: 25px;
+  max-width: 360px;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.price {
+  color: #d81b60;
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+.desc p {
+  font-size: 0.95rem;
+}
+
+.place {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #6a1b4d;
+}
+
+/* FLOATING ICON */
+.float {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 5s ease-in-out infinite;
+}
+
+.cherry { top: 8%; left: 6%; }
+.strawberry { bottom: 12%; right: 8%; }
+.bear { top: 18%; right: 12%; }
+.ribbon { bottom: 10%; left: 10%; }
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.hidden {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .product-card {
+    max-width: 90%;
+  }
+}
